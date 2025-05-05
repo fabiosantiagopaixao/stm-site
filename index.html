@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Territory Manager</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav {
+    padding: 0 1rem;
+    }
+    header nav a {
+        color: #017fe5;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    section {
+        padding: 1rem 2rem;
+        max-width: 800px;
+        margin: auto;
+    }
+    section h2 {
+      color: #017fe5;
+      margin-bottom: 1rem;
+    }
+    section p {
+      line-height: 1.6;
+    }
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  table-layout: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #017fe5;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+a.download-link {
+  color: #017fe5;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 1rem;
+    font-weight: bold;
+    color: #017fe5;
+    text-align: left;
+  }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1000px; margin: auto;">
+            <img src="img/logo.png" alt="Sign Territory Manager Logo" style="height: 150px;" />
+            <div style="display: flex; gap: 2rem;">
+              <a href="#about">About</a>
+              <!--<a href="#videos">Videos</a>-->
+              <a href="#install">Install</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+        Sign Territory Manager es una aplicación para la gestión de territorios. Fue desarrollada originalmente para ser utilizada en congregaciones de lengua de señas, pero también puede ser útil en congregaciones de habla portuguesa u otros idiomas extranjeros en Bolivia.
+        Si deseas añadir tu congregación a la lista, por favor contacta a: Fábio (+591 6359-0013).
+    </p>
+  </section>
+
+  <section id="install">
+    <h2>Install</h2>
+    <p>
+        Descarga siempre la versión más reciente de la aplicación STM.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Version</th>
+          <th>File</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>STM Android - Versión Beta</td>
+          <td>0.0.0</td>
+          <td><a href="img/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
