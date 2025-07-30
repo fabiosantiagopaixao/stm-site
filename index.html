@@ -129,6 +129,21 @@ a.download-link {
   }
 }
 
+
+.download-list {
+  display: none; /* escondido por padrão */
+  margin-top: 2rem;
+}
+
+.download-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
 @media (max-width: 600px) {
   nav > div {
     flex-direction: column;
@@ -164,7 +179,17 @@ a.download-link {
     color: #017fe5;
     text-align: left;
   }
+
+  table {
+    display: none;
+  }
+
+  .download-list {
+    display: block;
+  }
 }
+
+
   </style>
 </head>
 <body>
@@ -201,6 +226,7 @@ a.download-link {
         <tr>
           <th>Name</th>
           <th>Version</th>
+          <th>Date</th>
           <th>File</th>
         </tr>
       </thead>
@@ -208,10 +234,23 @@ a.download-link {
         <tr>
           <td data-label="Name">STM Android - Versión Beta</td>
           <td data-label="Version">0.0.0</td>
+          <td data-label="Date">30/07/2025</td>
           <td data-label="File"><a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
         </tr>
       </tbody>      
     </table>
+
+        <!-- Lista alternativa para mobile -->
+    <div class="download-list">
+      <div class="download-item">
+        <strong>Name:</strong> STM Android - Versión Beta<br>
+        <strong>Version:</strong> 0.0.0<br>
+        <strong>Date:</strong> 30/07/2025<br>
+        <strong>File:</strong> <a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a>
+      </div>
+      
+    </div>
+
   </section>
 </body>
 </html>
