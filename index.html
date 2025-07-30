@@ -6,10 +6,22 @@
   <title>Sign Territory Manager</title>
   <link rel="icon" type="image/png" href="img/logo.png" />
   <style>
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
+  width: 100%;
 }
 
 header {
@@ -18,7 +30,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 header nav {
@@ -87,7 +99,8 @@ th {
   color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even),
+tr:nth-child(even) td {
   background-color: #f2f2f2;
 }
 
@@ -132,7 +145,6 @@ a.download-link {
 
   tr {
     margin-bottom: 1rem;
-    border-bottom: 2px solid #ccc;
   }
 
   td {
@@ -173,7 +185,7 @@ a.download-link {
     <h2>About</h2>
     <p>
         Sign Territory Manager es una aplicación para la gestión de territorios. Fue desarrollada originalmente para ser utilizada en congregaciones de lengua de señas, pero también puede ser útil en congregaciones de habla portuguesa u otros idiomas extranjeros en Bolivia.
-        Si deseas añadir tu congregación a la lista, por favor contacta a: Fábio (+591 6359-0013).
+        Si deseas añadir tu congregación a la lista, por favor contacta a: Fábio (<a href="https://wa.me/59163590013?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20aplicaci%C3%B3n%2C%20%C2%BFme%20puedes%20ayudar%3F" target="_blank">Chatear por WhatsApp</a>).
     </p>
   </section>
 
@@ -195,7 +207,12 @@ a.download-link {
         <tr>
           <td data-label="Name">STM Android - Versión Beta</td>
           <td data-label="Version">0.0.0</td>
-          <td data-label="File"><a href="img/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
+          <td data-label="File"><a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
+        </tr>
+         <tr>
+          <td data-label="Name">STM Android - Versión Beta 2</td>
+          <td data-label="Version">0.0.0</td>
+          <td data-label="File"><a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
         </tr>
       </tbody>      
     </table>
