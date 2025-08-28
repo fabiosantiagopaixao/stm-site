@@ -1,256 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Territory Manager</title>
   <link rel="icon" type="image/png" href="img/logo.png" />
-  <style>
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
-
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  width: 100%;
-}
-
-header {
-  background-color: #fff;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-header nav {
-  padding: 0 1rem;
-}
-
-header nav a {
-  color: #017fe5;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-nav > div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: auto;
-}
-
-nav img {
-  height: 100px;
-  max-width: 100%;
-  height: auto;
-}
-
-nav div:nth-child(2) {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-section {
-  padding: 1rem 5vw;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  color: #017fe5;
-  margin-bottom: 1rem;
-}
-
-section p {
-  line-height: 1.6;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-  table-layout: auto;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-  text-align: left;
-  word-wrap: break-word;
-}
-
-th {
-  background-color: #017fe5;
-  color: white;
-}
-
-tr:nth-child(even),
-tr:nth-child(even) td {
-  background-color: #f2f2f2;
-}
-
-a.download-link {
-  color: #017fe5;
-  text-decoration: underline;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  nav img {
-    height: 80px;
-  }
-
-  nav div:nth-child(2) {
-    gap: 1rem;
-  }
-
-  header nav a {
-    font-size: 0.95rem;
-  }
-
-  section {
-    padding: 1rem 4vw;
-  }
-}
-
-
-.download-list {
-  display: none; /* escondido por padrão */
-  margin-top: 2rem;
-}
-
-.download-item {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-@media (max-width: 600px) {
-  nav > div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
-    display: none;
-  }
-
-  tr {
-    margin-bottom: 1rem;
-  }
-
-  td {
-    position: relative;
-    padding-left: 50%;
-    text-align: right;
-  }
-
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 45%;
-    padding-left: 1rem;
-    font-weight: bold;
-    color: #017fe5;
-    text-align: left;
-  }
-
-  table {
-    display: none;
-  }
-
-  .download-list {
-    display: block;
-  }
-}
-
-
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-          <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1000px; margin: auto;">
-            <img src="img/logo.png" alt="Sign Territory Manager Logo" style="height: 150px;" />
-            <div style="display: flex; gap: 2rem;">
-              <a href="#about">About</a>
-              <!--<a href="#videos">Videos</a>-->
-              <a href="#install">Install</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
+  <header>
+    <h1>🗺️ Sign Territory Manager</h1>
+    <p>Gestor de territorios para congregaciones</p>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-        Sign Territory Manager es una aplicación para la gestión de territorios. Fue desarrollada originalmente para ser utilizada en congregaciones de lengua de señas, pero también puede ser útil en congregaciones de habla portuguesa u otros idiomas extranjeros en Bolivia.
-        Si deseas añadir tu congregación a la lista, por favor contacta a: Fábio (<a href="https://wa.me/59163590013?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20aplicaci%C3%B3n%2C%20%C2%BFme%20puedes%20ayudar%3F" target="_blank">Chatear por WhatsApp</a>).
-    </p>
-  </section>
-
-  <section id="install">
-    <h2>Install</h2>
-    <p>
-        Descarga siempre la versión más reciente de la aplicación STM.
-    </p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Version</th>
-          <th>Date</th>
-          <th>File</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Name">STM Android - Versión Beta</td>
-          <td data-label="Version">0.0.0</td>
-          <td data-label="Date">30/07/2025</td>
-          <td data-label="File"><a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a></td>
-        </tr>
-      </tbody>      
-    </table>
-
-        <!-- Lista alternativa para mobile -->
-    <div class="download-list">
-      <div class="download-item">
-        <strong>Name:</strong> STM Android - Versión Beta<br>
-        <strong>Version:</strong> 0.0.0<br>
-        <strong>Date:</strong> 30/07/2025<br>
-        <strong>File:</strong> <a href="versions/stm_version_beta.apk" class="download-link">stm_version_beta.apk</a>
-      </div>
-      
+    <!-- 🚨 Botón destacado justo después de la descripción -->
+    <div class="donar-top">
+      <a href="#qr" class="donate-button">❤️ Apoyar este Proyecto </a>
     </div>
+  </header>
 
-  </section>
+  <main>
+    <section id="about">
+      <h2>Sobre la Aplicación</h2>
+      <p>
+        Esta app ayuda a organizar de manera sencilla la asignación de territorios dentro de cada congregación.  
+        Es liviana, rápida y pensada para facilitar el trabajo de los que la usan.  
+      </p>
+    </section>
+
+    <section id="versions">
+      <h2>Versiones Disponibles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Descripción</th>
+            <th>Archivo</th>
+             <th>Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sign Territory Manager (arm64-v8a)</td>
+            <td>Recomendada para teléfonos modernos con procesadores de <strong>64 bits</strong>.</td>
+            <td><a href="versions/stm-arm-64bits-v1.apk">Descargar</a></td>
+            <td>1.0.0</td>
+          </tr>
+          <tr>
+            <td>Sign Territory Manager (armeabi-v7a)</td>
+            <td>Optimizada para la mayoría de dispositivos Android antiguos con processadores de <strong>32 bits</strong>.</td>
+            <td><a href="versions/stm-arm-32bits-v1.apk">Descargar</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+
+    <section id="support">
+      <h2>Apoya este Proyecto</h2>
+      <p>
+        Esta aplicación es <strong>100% gratuita</strong>, creada con esfuerzo y tiempo personal.  
+        Sin embargo, para publicarla en la Play Store se necesita pagar una tarifa única de <strong>25 USD</strong>,  
+        además del tiempo invertido en desarrollo y mantenimiento.  
+      </p>
+      <p>
+        Si valoras este proyecto y deseas colaborar para que siga creciendo, puedes hacerlo con una donación voluntaria.  
+        ¡Tu apoyo hace la diferencia! ❤️  
+      </p>
+
+      <!-- 🎯 Aquí está el QR con el ancla -->
+      <div id="qr" class="qr-container">
+        <p><strong>Escanea este código abajo 👇</strong></p>
+        <img src="img/qr-donacion.jpeg" alt="Código QR para donación" />
+         <p><strong>FÁBIO SANTIAGO DA PAIXÃO</strong></p>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>© 2025 Sign Territory Manager - Proyecto independiente</p>
+  </footer>
+
+  <!-- Script del popup -->
+  <script src="js/popup.js"></script>
 </body>
 </html>
+
